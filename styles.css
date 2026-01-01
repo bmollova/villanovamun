@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* General body styles */
 body {
     background-color: #1a1a1a; /* Dark background for better contrast */
