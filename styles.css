@@ -10,7 +10,7 @@ body {
 header {
     position: relative;
     text-align: center;
-    padding: 100px 20px;  /* Padding to space out the content */
+    padding: 160px 20px 100px;  /* Padding to space out the content, adjusted for fixed nav */
     color: white;
     font-family: 'Arial', sans-serif;
 }
@@ -82,9 +82,52 @@ button a {
     text-decoration: none;
 }
 
+/* Navigation bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black */
+    z-index: 1;  /* Ensure it stays on top */
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+    border-bottom: 2px solid #007bff; /* Highlight with a line under the text */
+}
+
 /* Section styles */
 section {
-    padding: 30px;
-    margin: 20px;
-    background-color: #333; /* Dark section background */
+    padding: 50px 20px;
+    background-color: #333;  /* Dark background for sections */
+    margin-bottom: 30px;
+    color: white;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
