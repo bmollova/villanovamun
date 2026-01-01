@@ -9,8 +9,10 @@ body {
 /* Header styles */
 header {
     position: relative;
-    height: 100vh;
-    overflow: hidden;
+    text-align: center;
+    padding: 100px 20px;  /* Padding to space out the content */
+    color: white;
+    font-family: 'Arial', sans-serif;
 }
 
 /* Video background styles */
@@ -46,22 +48,38 @@ video {
     z-index: 2;
     text-align: center;
     color: white;
-    top: 50%;
-    transform: translateY(-50%);
 }
+
+/* Main heading and button */
 h1 {
-    margin: 0;
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
 button {
-    background-color: #0056b3; /* Blue button */
+    background-color: #007bff;  /* Villanova blue */
     color: white;
+    padding: 15px 30px;
     border: none;
-    padding: 10px 20px;
+    font-size: 1.2rem;
     cursor: pointer;
-    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
+
 button:hover {
-    background-color: #003d7a; /* Darker blue on hover */
+    background-color: #0056b3;
+}
+
+/* Add some smooth scrolling effect */
+button a {
+    color: white;
+    text-decoration: none;
 }
 
 /* Section styles */
