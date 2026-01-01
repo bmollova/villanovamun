@@ -54,6 +54,12 @@ video {
     color: white;
 }
 
+.logo {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
 /* Main heading and button */
 h1 {
     font-size: 3rem;
