@@ -5,15 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Villanova Model United Nations</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <!-- Video Background -->
-        <div class="video-background">
-            <video autoplay muted loop>
-                <source src="phl.mov" type="video/mp4">
-            </video>
-        </div>
+    <header class="navbar">
         <img src="vumunlogo.png" alt="Villanova MUN Logo" class="header-logo">
         <nav>
             <ul>
@@ -25,25 +20,37 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <div class="content">
-            <h1>Model United Nations</h1>
-            <p>Villanova University</p>
-            <button><a href="registration.html">Register Now</a></button>
-        </div>
     </header>
 
+    <section class="hero">
+        <div class="video-background">
+            <div class="overlay"></div> <video autoplay muted loop playsinline>
+                <source src="phl.mov" type="video/mp4">
+            </video>
+        </div>
+        
+        <div class="hero-content">
+            <p class="subtitle">VILLANOVA UNIVERSITY</p>
+            <h1>Model United Nations</h1>
+            <div class="hero-btns">
+                <a href="registration.html" class="btn-primary">Register Now</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="home-intro">
+        <div class="container">
+            <h2>Welcome to VUMUN</h2>
+            <p>Insert your welcoming text here to match the editorial style of ChoMUN...</p>
+        </div>
+    </main>
+
     <footer>
-        <p>&copy; 2026 Villanova MUN. All rights reserved.</p>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="committees.html">Committees</a></li>
-            <li><a href="secretariat.html">Secretariat</a></li>
-            <li><a href="registration.html">Registration</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="social-media">
-            <a href="https://www.instagram.com/villanovamodelun/" target="_blank">Instagram</a>
+        <div class="footer-container">
+            <p>&copy; 2026 Villanova MUN. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/villanovamodelun/" target="_blank">Instagram</a>
+            </div>
         </div>
     </footer>
 </body>
