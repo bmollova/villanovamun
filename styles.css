@@ -26,6 +26,7 @@ header {
     width: 100px;
     height: auto;
     z-index: 3;
+    filter: brightness(0) invert(1); /* Makes the logo black */
 }
 
 nav {
