@@ -111,6 +111,53 @@ body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     color: black;
 }
 
+/* Secretary-General Section */
+.sg-section {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.letter-paper {
+    background: white;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.letter-content h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.letter-date {
+    text-align: right;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.letter-body p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.letter-signature {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.sig-font {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
 /* Home Intro */
 .home-intro {
     padding: 80px 20px;
