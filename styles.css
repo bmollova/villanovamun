@@ -111,51 +111,64 @@ body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     color: black;
 }
 
-/* Secretary-General Section */
+/* The Section Background */
 .sg-section {
-    padding: 60px 20px;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #121212; /* Deep dark background */
+    padding: 120px 0;
+    display: flex;
+    justify-content: center;
 }
 
-.container {
+/* The Paper Sheet */
+.letter-paper {
+    background-color: #ffffff; /* The white "note" */
     max-width: 800px;
     margin: 0 auto;
+    padding: 60px 80px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5); /* Makes it look like it's floating */
+    position: relative;
 }
 
-.letter-paper {
-    background: white;
-    padding: 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
+/* "Calligraphy" Style Typography */
 .letter-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: #1a1a1a;
     text-align: center;
-    margin-bottom: 30px;
-    font-size: 2rem;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+}
+
+.letter-body p {
+    font-family: 'Georgia', serif; /* Classic readable serif */
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #222;
+    margin-bottom: 20px;
 }
 
 .letter-date {
     text-align: right;
+    font-family: 'Georgia', serif;
     font-style: italic;
-    margin-bottom: 20px;
+    color: #666;
 }
 
-.letter-body p {
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.letter-signature {
-    margin-top: 40px;
-    text-align: left;
-}
-
+/* Signature Styling */
 .sig-font {
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-bottom: 5px;
+    font-family: 'Cursive', 'Brush Script MT', serif; /* Calligraphy feel */
+    font-size: 2rem;
+    margin: 10px 0;
+    color: #002D62; /* Optional: Villanova Blue for the signature */
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+    .letter-paper {
+        padding: 40px 30px;
+        margin: 0 15px;
+    }
 }
 
 /* Home Intro */
@@ -400,9 +413,3 @@ button[type="submit"]:hover {
     max-width: 200px;
 }
 
-.staff-member img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-}
