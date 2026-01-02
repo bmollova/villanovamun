@@ -157,10 +157,10 @@ body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 /* Signature Styling */
 .sig-font {
-    font-family: 'Cursive', 'Brush Script MT', serif; /* Calligraphy feel */
+    font-family: 'Dancing Script', cursive; /* Better cursive font */
     font-size: 2rem;
     margin: 10px 0;
-    color: #002D62; /* Optional: Villanova Blue for the signature */
+    color: #002D62; /* Villanova Blue for the signature */
 }
 
 /* Responsive adjustment for smaller screens */
