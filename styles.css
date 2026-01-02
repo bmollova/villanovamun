@@ -19,6 +19,22 @@ header {
     font-family: 'Arial', sans-serif;
 }
 
+.header-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: auto;
+    z-index: 3;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+}
+
 /* Video background styles */
 .video-background {
     position: absolute;
@@ -52,12 +68,6 @@ video {
     z-index: 2;
     text-align: center;
     color: white;
-}
-
-.logo {
-    max-width: 200px;
-    height: auto;
-    margin-bottom: 20px;
 }
 
 /* Main heading and button */
